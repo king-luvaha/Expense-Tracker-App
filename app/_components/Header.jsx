@@ -21,10 +21,10 @@ function Header() {
     <div className='p-5 flex justify-between items-center border shadow-sm'>
         <Image src={'./logo.svg'}
             alt='logo'
-            width={160}
-            height={100}
+            width={50}
+            height={40}
         />
-        <div className='flex items-center space-x-8
+        <div className='flex items-center space-x-4
         '>
           {isSignedIn ? (
             <>

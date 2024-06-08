@@ -1,4 +1,4 @@
-import { Trash } from 'lucide-react'
+import { Trash, Trash2 } from 'lucide-react'
 import React from 'react'
 import { db } from '../../../../../utils/dbConfig'
 import { Expenses } from '../../../../../utils/schema'
@@ -30,12 +30,12 @@ function ExpenseListTable({expensesList,refreshData}) {
             <h2 className='font-bold'>Action</h2>
         </div>
         {expensesList.map((expenses)=>(
-            <div className='grid grid-cols-4 bg-slate-50 p-2 gap-16 '>
+            <div className='grid grid-cols-4 bg-slate-50 p-2 gap-8 '>
                 <h2>{expenses.name}</h2>
                 <h2>{expenses.amount}</h2>
                 <h2>{expenses.createdAt}</h2>
                 <h2>
-                    <Trash className='text-red-600 cursor-pointer'
+                    <Trash2 className='text-red-600 cursor-pointer mx-6'
                         onClick={()=>deleteExpense(expenses)}
                     />
                 </h2>
