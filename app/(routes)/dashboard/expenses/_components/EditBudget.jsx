@@ -13,7 +13,7 @@ import {
     DialogHeader,
     DialogTitle,
     DialogTrigger,
-  } from "./Dialog/dialog"
+  } from "./Dialog/Dialog"
 import EmojiPicker from 'emoji-picker-react'
 import { useUser } from '@clerk/nextjs'
 import { Input } from '../../budgets/_components/Input/input'
