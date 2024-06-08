@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React, { useEffect } from 'react'
-import { LayoutGrid, PiggyBank, ReceiptText, ShieldCheck } from 'lucide-react'
+import { LayoutGrid, PiggyBank, ReceiptText } from 'lucide-react'
 import { UserButton } from '@clerk/nextjs'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
@@ -27,12 +27,6 @@ function SideNav() {
             name:'Expenses',
             icon:ReceiptText,
             path:'/dashboard/expenses'
-        },
-        {
-            id:4,
-            name:'Upgrade',
-            icon:ShieldCheck,
-            path:'/dashboard/upgrade'
         }
     ]
 
