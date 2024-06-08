@@ -6,7 +6,7 @@ import React from 'react'
 
 function Header() {
 
-  const { user,isSignedIn } = useUser();
+  const { isSignedIn } = useUser();
 
   const CustomButton = ({ children, onClick }) => (
     <button
@@ -24,13 +24,24 @@ function Header() {
             width={160}
             height={100}
         />
-        {isSignedIn? <UserButton/> : 
-          <Link href={'/sign-in'}>
-            <CustomButton>Get Started</CustomButton>
-          </Link>
-        }
+        <div className='flex items-center space-x-8
+        '>
+          {isSignedIn ? (
+            <>
+              <Link href={'/dashboard'}>
+                <CustomButton>Dashboard</CustomButton>
+              </Link>
+              <UserButton/>
+            </>
+            ) : (
+              <Link href={'/sign-in'}>
+                <CustomButton>Get Started</CustomButton>
+              </Link>
+            )
+          }
+        </div>
     </div>
-  )
+  );
 }
 
 export default Header

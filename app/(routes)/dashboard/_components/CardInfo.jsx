@@ -52,7 +52,7 @@ function CardInfo({budgetList}) {
 
         <div className='p-7 border rounded-lg flex items-center justify-between'>
             <div>
-                <h2 className='text-sm'>No Of. Budget</h2>
+                <h2 className='text-sm'>No Of. Budgets</h2>
                 <h2 className='font-bold text-2xl'>{budgetList?.length}</h2>
             </div>
             <Wallet 
